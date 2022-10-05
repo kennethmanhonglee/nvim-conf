@@ -4,7 +4,6 @@ require('nvim-tree').setup {
     enable = true,
   },
   view = {
-    side = 'right',
     width = 40,
   },
   filters = {
@@ -30,4 +29,5 @@ require('nvim-tree').setup {
       enable = true,
     },
   },
+  open_on_setup = true,
 }

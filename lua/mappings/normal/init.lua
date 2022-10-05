@@ -138,9 +138,20 @@ local normal = {
   ["<C-B>"] = "Back up a page",
   ["<C-F>"] = "Forward down a page",
   ["<C-D>"] = "Down half a page",
-  ["<C-h>"] = "Signature help",
-  ["<C-k>"] = { [[:<C-U>exec "exec 'norm m`' | move -" . (1+v:count1)<cr>]], "Move line up" },
-  ["<C-j>"] = { [[:<C-U>exec "exec 'norm m`' | move +" . (0+v:count1)<cr>]], "Move line down" },
+  ["<C-j>"] = {
+    "<C-w>j", "Move cursor to bottom pane"
+  },
+  ["<C-k>"] = {
+    "<C-w>k", "Move cursor to top pane"
+  },
+  ["<C-h>"] = {
+    "<C-w>h", "Move cursor to left pane"
+  },
+  ["<C-l>"] = {
+    "<C-w>l", "Move cursor to right pane"
+  },
+  ["<A-k>"] = { [[:<C-U>exec "exec 'norm m`' | move -" . (1+v:count1)<cr>]], "Move line up" },
+  ["<A-j>"] = { [[:<C-U>exec "exec 'norm m`' | move +" . (0+v:count1)<cr>]], "Move line down" },
   ["<C-U>"] = "Up half a page",
   ["<C-w>"] = {
     name = "+Window commands",

@@ -14,7 +14,6 @@ local on_attach = function(client, bufnr)
   buf_set_keymap("n", "gD", utils.lua_cmd("vim.lsp.buf.declaration()"), opts)
 
   buf_set_keymap("n", "K",     utils.lua_cmd("vim.lsp.buf.hover()"), opts)
-  buf_set_keymap("n", "<C-h>", utils.lua_cmd("vim.lsp.buf.signature_help()"), opts)
 
   buf_set_keymap("n", "<localleader>pwa", utils.lua_cmd("vim.lsp.buf.add_workspace_folder()"), opts)
   buf_set_keymap("n", "<localleader>pwr", utils.lua_cmd("vim.lsp.buf.remove_workspace_folder()"), opts)
