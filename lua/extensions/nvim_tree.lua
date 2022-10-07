@@ -14,7 +14,7 @@ require('nvim-tree').setup {
     ignore = true,
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
   },
   actions = {
     open_file = {
