@@ -5,6 +5,7 @@ config.Opts = {
   background     = "dark",
   backspace      = "eol,start,indent",
   backup         = false,
+  colorcolumn    = "120",
   cmdheight      = 1,
   cursorline     = true,
   expandtab      = true,

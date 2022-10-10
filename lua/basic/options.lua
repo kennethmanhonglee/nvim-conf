@@ -52,6 +52,7 @@ u.opt("w", "number",         Opts.number)
 u.opt("w", "numberwidth",    Opts.numberwidth)
 u.opt("w", "wrap",           Opts.wrap)
 u.opt("w", "cursorline",     Opts.cursorline)
+u.opt("w", "colorcolumn",    Opts.colorcolumn)
 
 -- Buffer
 u.opt("b", "tabstop",          8) -- Don't change this
