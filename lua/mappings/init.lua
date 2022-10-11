@@ -10,6 +10,9 @@ local visual_opts = { mode = "v", }
 
 local insert_opts = { mode = "i", }
 
+-- TODO: Integrate into ecosystem
+vim.api.nvim_set_keymap('i', '<S-Space>', '<Esc>', {})
+
 local visual_only = {
   g = {
     a = { [[<Plug>(EasyAlign)]], "Easy Align" },
